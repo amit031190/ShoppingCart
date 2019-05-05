@@ -3,7 +3,7 @@ package entity;
 
 /**
  * @author amitk
- * Entity class to with item properties Name, Price
+ * Item Entity class to create new item
  *
  */
 public class ItemEntity {

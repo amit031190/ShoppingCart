@@ -3,7 +3,6 @@
  */
 package repository;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,10 +18,18 @@ public class Cart {
 		scannedItems = new HashMap<>();
 	}
 	
+	/**
+	 * @return scannedItems 
+	 */
 	public Map<String,Integer> getScannedItems() {
 		return scannedItems;
 	}
 	
+	
+	/**
+	 * @param item
+	 * add/update the count of scanned item to cart 
+	 */
 	public void addItem(String item) {
 		item = item.toLowerCase();
 		if(!scannedItems.containsKey(item)) {
@@ -34,6 +41,11 @@ public class Cart {
 		
 	}
 	
+	
+	/**
+	 * @param items
+	 * add the list of items to cart
+	 */
 	public void addAllItems(List<String> items) {
 		for(String item: items) {
 			addItem(item);

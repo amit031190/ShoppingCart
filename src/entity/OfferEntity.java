@@ -5,7 +5,7 @@ package entity;
 
 /**
  * @author amitk
- *
+ * Offer Entity class to create new offer
  */
 public class OfferEntity {
 	private int OfferId;
