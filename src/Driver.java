@@ -39,14 +39,14 @@ public class Driver {
 				// for every scanned list new cart is created
 				Cart cart = new Cart();
 				// add and store the scanned items as List
-				cart.addAllitems(Arrays.asList(arr));
+				cart.addAllItems(Arrays.asList(arr));
 				
 				// then checkouts the cart
 				CheckOut checkOut = new CheckOut(cart, items);
 				
 				// get total cost from checkout and prints on console
-				System.out.println("Total Cost:" + 
-				new DecimalFormat("0.00").format(checkOut.getTotalCost()) + "£");
+				System.out.println("Total Cost: £" + 
+				new DecimalFormat("0.00").format(checkOut.getTotalCost()));
 				System.out.println();
 			}
 		} catch (Exception e) {
